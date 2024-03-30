@@ -12,6 +12,9 @@ namespace GeekShopping.ProductAPI.Config
             {
                 config.CreateMap<ProductVO, Product>();
                 config.CreateMap<Product, ProductVO>();
+
+                config.CreateMap<CategoryVO, Category>();
+                config.CreateMap<Category, CategoryVO>();
             });
             return mappingConfig;
         }
